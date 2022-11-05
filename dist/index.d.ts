@@ -1,2 +1,3 @@
-export default function getProgrammingLanguage(fileName: string): string;
+import languageExtensions from "./assets/languageExtensions.json";
+export default function getProgrammingLanguage(fileName: keyof typeof languageExtensions): string;
 //# sourceMappingURL=index.d.ts.map
