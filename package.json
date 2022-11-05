@@ -1,6 +1,6 @@
 {
   "name": "detect-programming-language",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detects programming languages by file extension insanely fast.",
   "main": "dist/index.js",
   "type": "module",
