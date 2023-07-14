@@ -1,4 +1,4 @@
-import languageExtensions from "./assets/languageExtensions.json";
+import languageExtensions from "./assets/languageExtensions.json" assert { type: "json" };
 
 export default function getProgrammingLanguage(fileName: keyof typeof languageExtensions) {
     // If there's no name, only a file extension.
