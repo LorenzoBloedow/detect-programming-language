@@ -2,14 +2,16 @@
   "name": "detect-programming-language",
   "version": "1.0.2",
   "description": "Detects programming languages by file extension insanely fast.",
-  "main": "dist/index.js",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/LorenzoBloedow/detect-programming-language"
   },
   "scripts": {
-    "build": "tsc && terser --output dist/index.js dist/index.js",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
     "test": "jest"
   },
   "keywords": [
@@ -20,7 +22,9 @@
     "Extension"
   ],
   "files": [
-    "/dist"
+    "/dist/types",
+    "/dist/cjs",
+    "/dist/esm"
   ],
   "author": "LorenzoBloedow",
   "license": "MIT",
@@ -36,5 +40,14 @@
   },
   "engines": {
     "node": ">=17.1.0"
-  }
+  },
+  "exports": {
+    ".": {
+        "types": "./dist/types/index.d.ts",
+        "node": "./dist/cjs/index.js",
+        "require": "./dist/cjs/index.js",
+        "import": "./dist/esm/index.js",
+        "default": "./dist/esm/index.js"
+      }
+    }
 }

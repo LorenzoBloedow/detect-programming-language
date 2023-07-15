@@ -1,4 +1,4 @@
-import getProgrammingLanguage from "../dist/index";
+import getProgrammingLanguage from "../dist/esm/index";
 
 it("Returns 'JavaScript'.", () => {
     expect(getProgrammingLanguage(".js")).toBe("JavaScript");
