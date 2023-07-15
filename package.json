@@ -1,6 +1,6 @@
 {
   "name": "detect-programming-language",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Detects programming languages by file extension insanely fast.",
   "type": "module",
   "repository": {
