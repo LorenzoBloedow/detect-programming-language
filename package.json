@@ -1,6 +1,6 @@
 {
   "name": "detect-programming-language",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detects programming languages by file extension insanely fast.",
   "type": "module",
   "repository": {
@@ -43,11 +43,11 @@
   },
   "exports": {
     ".": {
-        "types": "./dist/types/index.d.ts",
-        "node": "./dist/cjs/index.js",
-        "require": "./dist/cjs/index.js",
-        "import": "./dist/esm/index.js",
-        "default": "./dist/esm/index.js"
-      }
+      "types": "./dist/types/index.d.ts",
+      "node": "./dist/cjs/index.js",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
     }
+  }
 }
